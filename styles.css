@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap')
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:rgb(22, 22, 22);
+    font-family: sans-serif;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: black;
+    padding: 24px;
+}
+.sidebar .logo img{
+    width: 130px;
+}
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.sidebar .navigation ul li{
+    padding: 10px 0px;
+}
+.sidebar .navigation ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+.sidebar .navigation ul li .fa{
+    font-size: 20px;
+    margin-right: 10pxs;
+}
+.sidebar .navigationul li a:hover{
+    color: #ffffff;
+
+}
+.main-container{
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 14px 30px;
+}
+.topbar .prev-next-buttons button{
+    color: #1e1c1c;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #919187;
+}
+.spotify-playlists{
+    padding: 20px 40px;
+}
+.spotify-playlists{
+    color:beige;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spotify-playlists .list{
+    display: flex;
+    gap: 40px;
+    overflow: auto;
+}
+.spotify-playlists .list .item:hover {
+    background-color: #252525;
+}
+.spotify-playlists .list .item{
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all;
+
+}
+.spotify-playlists .list .item img{
+    height: 50%;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
